@@ -6,18 +6,32 @@
     position: absolute;
     top: 5%;       /* it raises "seen all" high, the lesser the % 
     the higher it goes*/
-    left: 80%;     /* it shifts "seen all" towards the right handside*/
+    left: 70%;     /* it shifts "seen all" towards the right handside*/
     font-size: 20px;   /* it increases the size of "seen all"*/
-    outline: none;     /* it removes underline under "seen all"*/
+    /*outline: none; */    /* it removes underline under "seen all"*/
   }
   
+
+  .home{
+    color: black;
+    outline: none;
+    /*top: 3%;*/
+    /*left: 75%;*/
+    margin-left: 120px;
+    list-style: none;
+    color: gray;
+   /* margin-bottom: 50px;*/
+  }
+
   .next-home {
     color: black;
     outline: none;
-    left: 50%;
-    /*margin-left: 11000px;*/
+    /*left: 50%;*/
+    margin-left: 10px;
     list-style: none;
     margin-bottom: 50px;
+    color: grey;
+    cursor: pointer;
     /*botton:20%;*/
     /*outline: auto;*/
   }
@@ -49,17 +63,48 @@ padding-bottom: -10px;
   display: flex; 
 }
 
-.assignment-subject{
+
+.assignment-subject3{
   flex: 2;
   display: flex;
   justify-content: space-around;
   box-shadow: 5px 3px 10px 0 rgb(217, 208, 208);
-  height: 80px;
+  height: 90px;
   align-items: center;
   border-radius: 10px;
-  border-left: 3px solid #0c012f;
+  border-left: 3px solid rgb(209, 120, 120);
+  /*margin-bottom: 50px;*/
+  margin-top: 20px;
+  
   
 }
+
+.assignment-subject1{
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 5px 3px 10px 0 rgb(217, 208, 208);
+  height: 90px;
+  align-items: center;
+  border-radius: 10px;
+  border-left: 3px solid rgb(182, 142, 182);
+  /*margin-top: 20px;*/
+  margin-bottom: 20px;
+  
+}
+
+.assignment-subject2{
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 5px 3px 10px 0 rgb(217, 208, 208);
+  height: 90px;
+  align-items: center;
+  border-radius: 10px;
+  border-left: 3px solid #a3a2a5;
+  
+}
+
 
 .courses h3{
   font-size: 15px;
