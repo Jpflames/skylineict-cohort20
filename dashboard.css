@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Roboto+Slab&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none; /*remove the underline from the links*/
+    list-style: none; /*remove the bullets from list*/
+    font-family: 'Lora', serif;
+    font-family: 'Roboto Slab', serif; /*imported google fonts are 2 */
+}
+
+
+
+/* Designing the side-bar */
+
+/*here is my logo image style*/
+.logo img{
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 75px; /*helped to move the logo to hide*/
+    border-radius: 50%;
+}
+
+
+
+/* designing the logo itself */
+.logo{
+    overflow: hidden; /*this is applied to make d logo hidden in the 80px width of the menu-bar given*/
+}
+
+
+
+
+
+
+/* designing the menu-bar which houses the logo, link and lorem */
+.menu-bar{
+    position: sticky; /*It is positioned based on user's scroll position. it sticks to the page while other elements scrolls*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #092e26;
+    height: 110vh; /*for the long height view*/
+    width: 80px;
+    padding: 0px 20px;
+    transition: all 0.5s;
+    /* overflow: hidden; */
+}
+
+
+
+/* designing .menu-bar hover */
+.menu-bar:hover{
+    width: 20%; /*when menu-bar is hovered, it should give a width of 20% stretching past 80px*/
+    transition: 0.8s;
+/* background-color: green; */
+}
+
+
+
+
+
+/* designing the list inside the ul */
+ul li{
+    padding: 18px; /*adds spaces in the li*/
+    margin: 8px 0;
+}
+
+
+/* ul li hover style  */
+ul li:hover {
+    background-color: rgb(96, 252, 153);
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+}
+
+ul li:hover a{
+    color: #092e26;
+    
+}
+
+
+
+
+
+/*designing the a href link inside the list of the ul */
+ul li a{
+    color: #fff;
+}
+
+
+/* designing only the a href inside the ul (unordered list)*/
+ul a{
+    /* background-color: green; */
+    display: flex; /*makes them to be flexible*/
+    gap: 10px;/*this add gap between the icon and name and works only with flex*/
+}
+
+
+
+/* designing a hover style */
+/* a:hover{
+    background-color: #a70505;
+    /* padding: 10px; */
+/* } */
+
+
+
+/* designing the font icons only inside the link */
+ul i{
+    font-size: 20px;
+}
+
+
+
+
+/* designing the general ul */
+ul{
+    height: 10vh;
+    position: relative; /*to place the sign-out under the ul*/
+    width: 70%;
+}
+
+
+
+
+/* designing the ul a span(i.e span inside the a href) */
+ul a span{
+    overflow: hidden; /*this hides the written stuff in the span when menu-bar has a width of 80px*/
+}
+
+
+
+
+
+/* Designing the sign-out link */
+.sign-out{
+    background-color: rgb(96, 252, 153);;
+    border-radius: 10px;
+    margin-top: 50px;
+    /* overflow: hidden; */
+    
+    font-weight: bold;
+}
+
+.sign-out a i{
+    color: #092e26;
+}
+
+.sign-out:hover{
+    color: #092e26;
+}
+.sign-out a span{
+    color: #092e26;
+}
+
+
+/* Designing the body */
+body{
+    display: flex; /*This makes the header-main to be at the top of the page beside the menu-nav*/ 
+    
+}
+
+
+
+/* designing the .content-main (with the h1 and lorem) */
+.content-main{
+    background-image: url(./training-7166839_1280.jpg);
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Header style for css starts here. Header includes profile, search bar and welcome note */
+
+.header-main{
+    display: flex; 
+    justify-content: space-between; 
+    background-color: #fff;
+    padding: 5px 20px;
+    align-items: center; 
+    width: 93%;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px 5px lightgray;
+}
+
+
+.profile-img img{ 
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+
+/* Header title is here: styling the h1 of the header title */
+.header-title h1{
+    color: #0c012f;
+    font-size: 20px;
+}
+
+
+
+/* styling the span in the header title class */
+.header-title span{
+    color: #0c012f;
+    font-size: 15px;
+    letter-spacing: 4px;
+    display: block; 
+    padding-bottom: 5px;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.header-title {
+    overflow: hidden; /* Hide overflowing content within the div */
+}
+
+.header-title span {
+    display: inline-block;
+    white-space: nowrap; /* Prevent the text from wrapping */
+    animation: slideIn 5s linear infinite; /* Adjust the duration and timing function as needed */
+}
+
+
+
+/* Profile and search design starts here */
+.profile-info{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+
+
+/* Styling the input:text inside the search-box */
+.search-box input{
+   padding: 8px;
+   background-color: rgba(0, 0, 0, 0);
+   outline: none;
+   border: 1px solid gray;
+   border-radius: 10px;
+}
+
+
+/* positioning the parent div of the button and input */
+.search-box{
+    position: relative; 
+}
+
+
+
+/* styling the search button inside search-box */
+.search-box button{
+    padding: 8px;
+    position: absolute;   
+    top: 0;
+    right: 0; 
+    background-color: #0c012f;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+
+.search-box button:hover{
+    transform: scale(1.1); 
+}
+
+
+
+
+/* My Card Design start from here */
+/* Here is the main card container/parent container of the h1 card-flex, card-student, card-header,etc */
+.card-container{
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 5px 20px; 
+    width: 93%;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px 5px lightgray; 
+    height: 200px;
+}
+
+
+
+/* styling the h1 inside the .card-container */
+.card-container h1{
+    color: #0c012f;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+
+
+/*styling the card-flex container. This contains all the 4 flex containers */
+.card-flex{
+    display: flex; 
+    gap: 1rem; 
+}
+
+
+
+
+.card-student{
+background: rgba(3, 39, 47, 0.566);
+padding: 10px;
+display: flex; 
+justify-content: space-between; 
+flex-direction: column;
+width: 23.25%; 
+height: 120px;
+border-radius: 10px;
+transition: all 0.5s ease-in-out; 
+box-shadow: 2px 2px 2px 1px #443f3f33; 
+}
+
+
+
+/* Adding hover style to .card-student */
+.card-student:hover{
+    transform: translate(-5px);
+    cursor: pointer;
+}
+
+
+
+
+/* designing the card-header contains the div with d 2 spans (student passcode and PASS) */
+.card-header{
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+
+
+/* styling the passcode-info div (houses the pass and passcode alone) that is inside the card-header class */
+.passcode-info{
+display: flex;
+flex-direction: column; 
+}
+
+
+
+/* Designing the icons inside the span of the main card-student(each flex container) */
+
+.icon{
+    font-size: 20px;
+    background-color: #0c012f;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%; 
+}
+
+
+
+/* Designing each flex container (calling class student which is a div inside card-flex). 
+Calls each flex in an order of hierrachy (using not-child) */
+.card-flex > .card-student:nth-child(1){
+    background-color: rgb(254, 226, 254);
+}
+
+
+.card-flex > .card-student:nth-child(2){
+        background-color: rgb(227, 226, 242);
+ }
+
+
+ .card-flex > .card-student:nth-child(3){
+    background-color: rgb(204, 242, 239);
+}
+
+
+
+.card-flex > .card-student:nth-child(4){
+    background-color: rgb(242, 207, 204);
+}
+
+
+
+/* Custom class for my card background (i.e creating class from css instead of html)*/
+.light-purple{
+    background: rgb(254, 226, 254); 
+}
+
+
+.dark-purple{
+    background-color: purple; 
+}
+
+.dark-red{
+    background-color: red;
+}
+
+
+.dark-blue{
+    background-color: dodgerblue;
+}
+/* My css class creation ends here */
+
+
+
+/* Assignment container starts here i.e the parent of everything inside assignments */
+.assignment-container{
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 5px 20px; 
+    width: 93%;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px 5px #092e26;
+
+}
+
+
+
+/* Designing h1 inside the assignment-container */
+.assignment-container h1{
+    font-size: 18px;
+    padding-bottom: 1rem;
+}
+
+
+
+/* Designing the img inside the assignment(top-img) */
+.top-img img{
+    width: 50px;
+}
+
+
+/* Designing my assignment-flex (sub-parent div that contain all the flex items on d assignment after the h1 ) */
+.assignment-flex{
+    display: flex; 
+}
+
+
+/* Designing assignment-subject (that is 1st div inside assignment-flex)*/
+.assignment-subject{
+    /* background-color: red; */
+    flex: 2; 
+    display: flex;
+    justify-content: space-around; 
+    box-shadow: 5px 3px 10px 0px rgb(220, 211, 211); 
+    height: 70px;
+    align-items: center; 
+    border-radius: 10px;
+    border-left: 3px solid #0c012f; 
+}
+
+
+
+/* Designing the h3 of the courses */
+.courses h3{
+    font-size: 15px;
+    padding-bottom: 5px; 
+    color: #0c012f;
+    font-weight: bold;
+}
+
+/* Designing the topic (the span class inside courses e.g; event with html..) */
+.topic{
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic; 
+    
+}
+
+
+/* designing the btn-btn(the span class for completed) */
+.btn-btn{
+    background-color: rgb(183, 233, 209);
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #0c012f;
+}
+
+
+
+/* Designing top-performer(2nd div inside assignment-flex) */
+.top-performer{
+    flex: 1; 
+    display: flex; 
+    justify-content: space-around; 
+    box-shadow: 5px 3px 10px 0px rgb(220, 211, 211); 
+    align-items: center; 
+    border-radius: 10px; 
+    border-right: #0c012f solid 3px;
+}
