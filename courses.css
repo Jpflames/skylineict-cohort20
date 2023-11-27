@@ -1,58 +1,21 @@
 .body{
-  /*display: flex;*/
-}
-
-/*.header-main{
   display: flex;
-  justify-content: space-between;
-  background-color: white;
-  padding: 5px 20px;
-  border-radius: 15px;
-  align-items: center;
-  width: 93%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  box-shadow: 3px 3px 3px 1px #0c012f;
-  
-  }
-
-  .profile-info{
-    display: flex;
-    align-items: center;
-    gap: 100px;
-    }
-
-
-    .move{
-      font-size: 20px;
-      /*position: relative;*/
-      margin-left: 1100px;
-      /*position: fixed;*/
-      bottom: 5px;
-      /*justify-content: space-between;*/
-    }
-
-  
-    /*.move1{
-      cursor: pointer;
-    }*/
-
-
+}
     /* go back home button */
   .next {
     position: absolute;
-    top: 8%;
-    left: 50%;
-    font-size: 10px; 
-    /*outline: none;*/
+    top: 5%;       /* it raises "seen all" high, the lesser the % 
+    the higher it goes*/
+    left: 80%;     /* it shifts "seen all" towards the right handside*/
+    font-size: 20px;   /* it increases the size of "seen all"*/
+    outline: none;     /* it removes underline under "seen all"*/
   }
   
   .next-home {
     color: black;
     outline: none;
     left: 50%;
-    margin-left: 1000px;
+    /*margin-left: 11000px;*/
     list-style: none;
     margin-bottom: 50px;
     /*botton:20%;*/
@@ -91,7 +54,7 @@ padding-bottom: -10px;
   display: flex;
   justify-content: space-around;
   box-shadow: 5px 3px 10px 0 rgb(217, 208, 208);
-  height: 70px;
+  height: 80px;
   align-items: center;
   border-radius: 10px;
   border-left: 3px solid #0c012f;
@@ -109,14 +72,14 @@ padding-bottom: -10px;
   font-size: 12px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
-  color: lightgray;
+  color: rgb(180, 180, 180);
 }
 
 .topic1{
   font-size: 12px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
-  color: lightgray;
+  color: rgb(180, 180, 180);
 }
 
 .btn-btn{
