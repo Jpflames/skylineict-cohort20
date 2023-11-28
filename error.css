@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@0;1&display=swap');
+* {
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style-type:none;
+}
+.countainer-error{
+    text-align: center;
+    margin-top: 20%;
+    text-transform: capitalize;
+    font-family: 'Kanit', sans-serif;
+}
+h1{
+    font-size: 50px;
+
+}
+p{
+    margin-bottom: 20px;
+}
+h2{
+    margin-bottom: 10px;
+}
+.home{
+    background-color: rgba(128, 0, 128, 0.678);
+    color: white;
+     padding: 10px 10px; 
+     border-radius: 5px;
+
+
+}
+.thumpdown{
+    color: red;
+    margin-right: 3px;
+}
