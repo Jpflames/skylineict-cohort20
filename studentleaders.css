@@ -47,7 +47,7 @@ section{
     position: absolute;
     bottom: -2rem;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /*The translateX() function is an inbuilt function which is used to reposition the element along the horizontal axis*/
     border-radius: 2rem;
 }
 
