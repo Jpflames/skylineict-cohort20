@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Roboto+Slab&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif; /*imported google fonts*/
+}
+
+
+/* styling the main-container with the id selector */
+#invoice {
+    width: 80%;
+    margin: 10px auto; /*to add all round padding and centralise the main-container*/
+    height: 115vh;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1); /*that is right, bottom, left and top*/ 
+    padding: 20px;
+}
+
+
+/* styling the div-head containing the top details*/
+.div-head{
+    /* background-color: blue; */
+    display: flex; /*makes it flexible on a line and address its immediate child*/
+   justify-content: space-between;
+   margin-bottom: 25px;
+   margin-top: 15px;
+}
+
+
+/* designing div-details */
+/* .div-details{
+    /* background-color: red; */
+    /* display: flex; */
+    /* justify-content: space-between; space-between; add space between the 2 divs */
+    /* gap: 60%; */
+/* }  */
+
+
+/* styling the "from" and "to" divs */
+/* .from, .to {
+    width: 50%; /*this gave the individual divs a width of 50% each*/
+    /* background-color: green; */
+/* } */ */
+
+/* styling the contents of the "from" and "to" divs */
+.from p, .to p {
+    margin-bottom: 10px; /*this gives space between each p inside the .from div and .to div*/
+}
+
+
+
+/* adjust "to" div to start from the extreme right */
+/* .to { */
+    /* text-align: right; /*this aligns the text on the to class to the right side of the div*/
+    /* background-color: gray; */
+    /* margin-bottom: 50px; adds space before the table */ 
+/* } */
+
+
+/* Designing the table inside the div container with id-selector */
+#invoice table{
+    /* background-color: yellowgreen; */
+    margin: 0 auto; /*to center my table inside my div*/
+    width: 100%;
+    font-size: 18px;
+    border-collapse: collapse; /*to collapse the outer border of the table*/
+    cursor: pointer;
+    position: relative; /*to enable me style my icons*/
+    z-index: 1;
+}
+
+
+
+/* styling my icons */
+.icons{
+    z-index: 3; /*to ensure the icon given a priority to display first before the table*/
+    display: inline;
+    position: fixed; /*to fix it at the chosen position of the image*/
+    display: flex; /*so as to flex in a column direction*/
+    flex-direction: column;
+    right: 10%;
+    bottom: 8%;
+}
+
+
+/* styling  icon1 */
+.icon1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+
+/* styling icon2 */
+.icon2{
+background-color: rgb(10, 140, 10);
+color: white;
+padding: 10px;
+border-radius: 50%;
+font-size: 20px;
+}
+
+
+
+/* Designing the table, table head data and table body data of the table */
+table, th, td{
+    /* background-color: blue; */
+    /* text-align: center; */
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left; /*this aligns the datas to the left*/
+}
+
+
+/* styling the sub-total */
+.sub-total{
+    /* background-color: antiquewhite; */
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 75%; /*to move the subtotal: N90,000 towards the right*/
+    word-spacing: 75px; /*to add space between the subtotal and the amount*/
+    padding: 10px;
+    /* text-align: right; */
+}
+
+
+/* styling my table row data to note odd numbers */
+tbody tr:nth-child(odd){
+    background-color: lightgray;
+}
+
+
+
+/* hover style */
+ tbody tr:hover{
+    background-color: darkgray;
+    transition: 0.15s;
+}
+
+
+/* styling the span inside td and .sub-total */
+span{
+    /* background-color: beige; */
+    text-decoration: line-through;
+}
+
+
+
+/* Styling the hover backgrounds of full and part-payment */
+/* .full-payment:hover{
+    background-color: green;
+}
+
+.part-payment:hover{
+    background-color: orange;
+} */
+     
+
+/* styling my icons the check and full-payment */
+ .check i{
+    background-color: green;
+    color: white;
+    font-size: 15px;
+}
+
+
+/* styling my icons with the part-payment */
+.orange-check i{
+    background-color: orange;
+    color: white;
+    font-size: 15px;
+}
