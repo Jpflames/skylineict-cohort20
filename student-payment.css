@@ -1,0 +1,171 @@
+* {
+    /* margin: 0; */
+    padding: 0;
+    align-content: center;
+    margin-bottom: 10px;
+
+}
+
+
+
+table {
+    position: absolute;
+    /* margin-left: 10px ; */
+    margin-right: 60px;
+    border-bottom: 1px solid;
+    border-color: lightgray;
+    font-size: large;
+
+}
+
+table,
+td {
+
+    border-bottom: 1px solid;
+}
+
+table {
+    align-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 90%;
+    /* font-size: 15px; */
+    border-collapse: collapse;
+    padding-right: 20px;
+    position: absolute;
+
+}
+
+
+th,
+td {
+    padding: 25px;
+    border-color: lightgray;
+    padding-left: 10px;
+    text-align: left;
+}
+
+th {
+    font-size: 20px;
+    background-color: transparent;
+    color: black;
+    text-align: left;
+}
+
+/* tbody:nth-child(even)
+{
+    background-color: rgba(240, 240, 141, 0.459);
+} */
+
+tbody :hover {
+    background-color: rgba(128, 128, 128, 0.267);
+
+
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.grade {
+    background-color: rgba(100, 192, 14, 0.856);
+    border-radius: 5px;
+    padding: 8px 10px;
+    border-style: none;
+
+}
+
+
+
+.Average {
+    background-color: rgba(255, 166, 0, 0.89);
+    border-radius: 5px;
+    padding: 8px;
+    ;
+    border: none;
+
+}
+
+
+.dim {
+    background-color: rgba(255, 0, 0, 0.726);
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    border: none;
+    color: white;
+    font-size: large;
+}
+
+
+.fa-solid {
+    color: rgb(218, 201, 201);
+    /* margin-right: 20px; */
+    margin-left: -50px;
+    cursor: pointer;
+    /* gap: 50rem; */
+    word-spacing: 5px;
+
+}
+
+
+.s-button {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+}
+
+.student-details {
+    padding: 5px;
+    font-size: larger;
+
+
+}
+
+.option-box {
+    width: 55px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(248, 241, 233, 0.719);
+    outline-color: none
+}
+
+
+
+.search {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.search-box {
+    margin-right: 150px;
+    border-radius: 5px;
+    color: black;
+
+
+}
+
+.search-box input[type=text] {
+    font-size: 14px;
+    height: 30px;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(129, 122, 122);
+    background-color: rgba(243, 235, 235, 0.39);
+    border-radius: 3px;
+    color: black;
+    text-indent: 8px;
+
+
+}
+
+
+td {
+    text-align: left;
+}
